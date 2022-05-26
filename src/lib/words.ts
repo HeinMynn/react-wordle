@@ -74,26 +74,11 @@ export const localeAwareUpperCase = (text: string) => {
     : text.toUpperCase()
 }
 
-export const getWordOfDay = () => {
-  // January 1, 2022 Game Epoch
-  const epoch = new Date(2022, 0)
-  const start = new Date(epoch)
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
-  let index = 0
-  while (start < today) {
-    index++
-    start.setDate(start.getDate() + 1)
-  }
-
-  const nextDay = new Date(today)
-  nextDay.setDate(today.getDate() + 1)
-
+export const getSolution = () => {
   return {
-    solution: localeAwareUpperCase(WORDS[index % WORDS.length]),
-    solutionIndex: index,
-    tomorrow: nextDay.valueOf(),
+    solution: localeAwareUpperCase(WORDS[(WORDS.length * Math.random()) | 0]),
+    solutionIndex: Math.random(),
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex } = getSolution()
