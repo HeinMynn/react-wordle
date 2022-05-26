@@ -40,6 +40,7 @@ import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
 import { isInAppBrowser } from './lib/browser'
+import { Adsense } from '@ctrl/react-adsense'
 
 function App() {
   const prefersDarkMode = window.matchMedia(
@@ -256,6 +257,11 @@ function App() {
         setIsInfoModalOpen={setIsInfoModalOpen}
         setIsStatsModalOpen={setIsStatsModalOpen}
         setIsSettingsModalOpen={setIsSettingsModalOpen}
+      />
+      <Adsense
+        client="ca-pub-4252052358641832"
+        slot="9212592149"
+        style={{ display: 'block' }}
       />
       <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
         <div className="pb-6 grow">
