@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ctrl/react-adsense": "^1.6.0",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.1",
