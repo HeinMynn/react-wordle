@@ -51,7 +51,7 @@ export const BaseModal = ({ title, children, isOpen, handleClose }: Props) => {
                 onClick={() => handleClose()}
                 tabIndex={0}
                 aria-pressed="false"
-                className="absolute right-4 top-4"
+                className="absolute right-4 top-4 focus:outline-none"
               >
                 <XCircleIcon className="h-6 w-6 cursor-pointer dark:stroke-white" />
               </button>

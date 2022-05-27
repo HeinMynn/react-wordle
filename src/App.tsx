@@ -259,11 +259,13 @@ function App() {
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
       <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
-        <Adsense
-          client="ca-pub-4252052358641832"
-          slot="9212592149"
-          style={{ display: 'block' }}
-        />
+        <div className="pb-6 grow">
+          <Adsense
+            client="ca-pub-4252052358641832"
+            slot="9212592149"
+            style={{ display: 'block' }}
+          />
+        </div>
         <div className="pb-6 grow">
           <Grid
             solution={solution}
