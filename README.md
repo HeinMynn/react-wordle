@@ -2,7 +2,10 @@
 
 This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
 
-[**Try out the demo!**](https://reactle.vercel.app/)
+## Improvements
+- remove the limit of one word a day 
+
+[**Try out the demo!**](https://wordle.idigitalnews.com/)
 
 ## Build and run
 
